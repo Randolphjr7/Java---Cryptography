@@ -46,7 +46,14 @@ public class Cryptography {
         output += "The decrypted Reverse message is \n" + code;
         
         System.out.println(output);
+        display(output);
+              
         
     }
+
+    static void display(String s) { 
+            JOptionPane.showMessageDialog(null, s, "Encrypt/decrypt",  
+                                          JOptionPane.INFORMATION_MESSAGE);  
+        }
     
 }
