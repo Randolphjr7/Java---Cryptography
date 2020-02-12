@@ -17,7 +17,7 @@ public class Cryptography {
         String text = JOptionPane.showInputDialog("Enter message");
         output += "The original message is: " + text + "\n";
 
-        // Cipher object from Ceaser?
+        // Cipher object from Ceaser
         Cipher c = new Caeser(text);
         c.encrypt();
         code = c.getEncodedMessage();
@@ -26,7 +26,7 @@ public class Cryptography {
         code = c.getDecodedMessage();
         output += "The decrypted message is: " + code + "\n";
 
-        // Cipher Object from Transpose?
+        // Cipher Object from Transpose
         c = new Transpose(text);
         c.encrypt();
         code = c.getEncodedMessage();
